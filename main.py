@@ -1,16 +1,10 @@
-from time import sleep
-stored_pass = "password"
-password = ""
-guesses = 0
-pass_mismatch = stored_pass != password
+for number in range(1,16):
 
-while pass_mismatch:
-  guesses = guesses + 1
-  if guesses > 3:
-    print("Maximum guesses reached. Locked out for 10 minutes")
-    sleep(600)
-  print("Enter your password:")
-  password = input()
-  pass_mismatch = stored_pass != password
-
-print("Access granted")
+  if number <= 15 and number % 3 != 0 and number % 5 != 0:
+    print(number)
+  if number % 3 == 0 and number % 5 != 0:
+    print("Fizz")
+  if number % 3 != 0 and number % 5 == 0:
+    print("Buzz")
+  if number % 3 == 0 and number % 5 == 0:
+    print("FizzBuzz")
