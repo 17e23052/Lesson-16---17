@@ -1,20 +1,76 @@
-#UNFINISHED BROKEN FIZZBUZZ GAME
-number = 1
-if number % 3 != 0 and number % 5 != 0:
-  ans = number
-elif number % 3 == 0 and number % 5 != 0:
-  ans = "Fizz"
-elif number % 3 != 0 and number % 5 == 0:
-  ans = "Buzz"
-elif number % 3 == 0 and number % 5 == 0:
-  ans = "FizzBuzz"
-
-print("Welcome to FizzBuzz! Enter a number, Fizz, Buzz or FizzBuzz.")
+print("Welcome to FizzBuzz! Enter a number, Fizz, Buzz, or FizzBuzz.")
 guess = input()
-number = number + 1
-if guess == ans:
+if guess == "1":
   print("Next:")
-elif guess != ans:
+  guess = input()
+  if guess == "2":
+    print("Next:")
+    guess = input()
+    if guess == "Fizz":
+      print("Next:")
+      guess = input()
+      if guess == "4":
+        print("Next:")
+        guess = input()
+        if guess == "Buzz":
+          print("Next:")
+          guess = input()
+          if guess == "Fizz":
+            print("Next:")
+            guess = input()
+            if guess == "7":
+              print("Next:")
+              guess = input()
+              if guess == "8":
+                print("Next:")
+                guess = input()
+                if guess == "Fizz":
+                  print("Next:")
+                  guess = input()
+                  if guess == "Buzz":
+                    print("Next:")
+                    guess = input()
+                    if guess == "11":
+                      print("Next:")
+                      guess = input()
+                      if guess == "Fizz":
+                        print("Next:")
+                        guess = input()
+                        if guess == "13":
+                          print("Next:")
+                          guess = input()
+                          if guess == "14":
+                            print("Next:")
+                            guess = input()
+                            if guess == "FizzBuzz":
+                              print("You completed FizzBuzz! Thanks for playing.")
+                            else:
+                              print("Incorrect! Game over.")
+                          else:
+                            print("Incorrect! Game over.")
+                        else:
+                          print("Incorrect! Game over.")
+                      else:
+                        print("Incorrect! Game over.")
+                    else:
+                      print("Incorrect! Game over.")
+                  else:
+                    print("Incorrect! Game over.")
+                else:
+                  print("Incorrect! Game over.")
+              else:
+                print("Incorrect! Game over.")
+            else:
+              print("Incorrect! Game over.")
+          else:
+            print("Incorrect! Game over.")
+        else:
+          print("Incorrect! Game over.")
+      else:
+        print("Incorrect! Game over.")
+    else:
+      print("Incorrect! Game over.")
+  else:
+    print("Incorrect! Game over.")
+else:
   print("Incorrect! Game over.")
-elif number == 15:
-  print("You completed Fizzbuzz! Thanks for playing.")
